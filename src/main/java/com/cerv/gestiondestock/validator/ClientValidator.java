@@ -35,11 +35,11 @@ public class ClientValidator {
         if (clientDto.getAdresse()== null){
             errors.add("veuiller renseigner l'adresse du client");
         } else {
-            if (!StringUtils.hasLength(clientDto.getAdresse().getAdresse1())){
-                errors.add("le champ adresse 1 est obligatoire");
+            if (!StringUtils.hasLength(clientDto.getAdresse().getAdresse1())) {
+                errors.add("Le champ 'Adresse 1' est obligatoire");
             }
-            if (!StringUtils.hasLength(clientDto.getAdresse().getAdresse2())){
-                errors.add("le champ adresse 2 est obligatoire");
+            if (!StringUtils.hasLength(clientDto.getAdresse().getAdresse2())) {
+                errors.add("Le champ 'Adresse 2' est obligatoire");
             }
             if (!StringUtils.hasLength(clientDto.getAdresse().getVille())){
                 errors.add("le champ ville est obligatoire");
